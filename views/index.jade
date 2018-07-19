@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  h1= title
+  p Aria Network Search
+
+  // Wrapper
+  #wrapper
+
+    // NETWORK INFO
+    #networkInfo
+      h2 Network Info
+      p
+        strong Network Name:
+        |  <span id='networkInfoName'></span>
+        br
+        strong Type:
+        |  <span id='networkInfoType'></span>
+        br
+        strong Owner:
+        |  <span id='networkInfoOwner'></span>
+        br
+        strong Number of Nodes:
+        |  <span id='networkInfoNodes'></span>
+    // /NETWORK INFO
+
+    // NETWORK LIST
+    h2 Network List
+    #networkList
+      table
+        thead
+          th Network Name
+          th File Path
+        tbody
+    // /NETWORK LIST
+
+
+  // /WRAPPER
