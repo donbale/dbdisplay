@@ -28,7 +28,7 @@ function populateTable() {
     $.each(data, function(){
       tableContent += '<tr>';
       tableContent += '<td><a href="#" class="linkshownetwork" rel="' + this.file_name + '">' + this.file_name + '</a></td>';
-      tableContent += '<td>' + this.path_file_name + '</td>';
+      tableContent += '<td><a href=' + this.path_file_name + '">' + this.path_file_name + '</a></td>';
       tableContent += '</tr>';
     });
 
